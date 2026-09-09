@@ -4,7 +4,8 @@ metadata:
   name: guestbook-declarativo
   namespace: argocd
 spec:
-  project: guestbook-declarativo
+  replicas: 3
+  project: default
   source:
     repoURL: https://github.com/newbare/argocd-example-apps.git
     targetRevision: HEAD
